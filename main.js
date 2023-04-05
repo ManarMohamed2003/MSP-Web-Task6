@@ -8,7 +8,6 @@ let addBook = document.getElementsByTagName("button")[0];
 let resetBook = document.getElementById("reset");
 let books = document.getElementById("library");
 
-
 resetBook.onclick = function(){
     Name.value="";
     breif.value="";
@@ -74,4 +73,3 @@ addBook.onclick = function(){
 function deleteTask(btn){
     btn.parentElement.remove();
 }
-
