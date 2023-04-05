@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <fieldset>
+        <legend>Library</legend>
+
+        <label for="book-name">Add Book Name :</label>
+        <input type="text" name="book-name" id="book-name" required>
+
+        <label for="book-brief">Add Book Brief :</label>
+        <textarea name="book-brief" id="book-brief" cols="30" rows="10" placeholder="Add book brief ..." required></textarea>
+
+        <label for="rating">Rate The Book :</label>
+        <input type="number" name="rating" id="rating" min="1" max="5">
+
+        <label>Did You Read This Book :</label>
+
+        <div>
+            <input type="radio" id="read" name="read" value="Yes">
+            <label for="read" class="read">Yes</label>
+        </div>
+
+        <div>
+            <input type="radio" id="didnot-read" name="read" value="No">
+            <label for="didnot-read" name="didnot-read" class="read">No</label>
+        </div>
+
+        <input type="file" name="image" id="image" accept="image/png, image/jpg , image/gif , image/jpeg" required>
+
+        <button>Add Book</button>
+        <button id="reset">Reset</button>
+    </fieldset>
+
+    <!-- <i class="fa-solid fa-star" style="color: #fff700;"></i> -->
+    <div id="library" >
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

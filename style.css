@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+.backgroundColor{
+    background-image: linear-gradient(to bottom right, white, rgb(0, 225, 255));
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 80px;
+    left: 40%;
+    width: max-content;
+    background-image: linear-gradient(to bottom right, white, rgb(108, 255, 108));
+    margin-bottom: 10%;
+}
+input , button{
+    margin-bottom: 15px;
+}
+#library{    
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    row-gap: 50px;
+    column-gap: 40px;
+    padding: 0 60px;
+}
+.book{
+    padding-top: 20px;
+    border-radius: 20px;
+    border: 0.5px solid rgba(0, 0, 0, 0.267);
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#bookName{
+    font-size:20px ;
+    font-weight: bold;
+}
+#bookBrief,#bookRating,#del{
+    font-size:20px ;
+}
+#bookCover{
+    object-fit:contain;
+    width: 150px;
+    height: 150px;
+}
+.stars{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.star{
+    
+    object-fit:contain;
+    width: 30px;
+    height: 30px;
+}
